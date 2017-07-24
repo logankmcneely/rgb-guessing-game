@@ -1,0 +1,126 @@
+body {
+    background-color: #232323;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+    background-color: rgb(27, 105, 161);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    z-index: 1000;
+    position: relative;
+    text-shadow: -2px -2px black;
+}
+
+h1, h2 {
+    font-size: 4em;
+    padding: 5px;
+    font-weight: 600;
+}
+
+#bar {
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 0;
+    font-weight: 600;
+    color: rgb(27, 105, 161);
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 2em;
+    text-shadow: -1px -1px grey;
+}
+
+li {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: rgb(27, 105, 161);
+}
+
+#new {
+    border-left: 2px solid;
+}
+
+#hard {
+    border-right: 2px solid;
+}
+
+.square {
+    width: 30%;
+    margin: 1.66%;
+    padding-bottom: 30%;
+    float: left;
+    border-radius: 5%;
+    transition: all 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.greyedOut {
+    transform: scale(1);
+    transition: all 0.35s cubic-bezier(0.06, 0.93, 0.24, 1.01);
+}
+
+.correct {
+    transform: scale(15);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9999;
+    margin: 0;
+}
+
+.topSquare {
+    z-index: 9999;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menuToggle {
+    background-color: #232323;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.lowercase {
+    font-size: 0.9em;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 0;
+    text-shadow: -1px -1px grey;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: rgb(27, 105, 161);
+}
+
+button:focus {
+    outline: 0;
+}
+
+#ulContainer {
+    border-bottom: 4px solid;
+    border-color: rgb(27, 105, 161);
+}
