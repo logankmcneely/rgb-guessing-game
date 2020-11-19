@@ -1,6 +1,8 @@
 body {
     background-color: #232323;
     font-family: 'Titillium Web', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .header {
@@ -9,31 +11,39 @@ body {
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
     z-index: 1000;
-    position: relative;
-
+    text-shadow: -2px -2px black;
+    height: 30vh;
+    font-weight: 600;
 }
 
 h1, h2 {
-    font-size: 4vh;
-    padding: 1vw;
-    margin: 0;
-    font-weight: 600;
+    font-size: 6vh;
+    padding: 1.5vh;
+    margin: auto;
 }
 
 #bar {
     text-align: center;
     background-color: white;
-    margin: auto;
-    margin-top: 0;
     font-weight: 600;
     color: rgb(27, 105, 161);
     text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: -1px -1px grey;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    font-size: 3vh;
-
+    -webkit-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    border-bottom: 4px solid;
+    border-color: rgb(27, 105, 161);
+    height: 10vh;
 }
 
 li {
@@ -51,11 +61,6 @@ li {
 }
 
 .square {
-    width: 30%;
-    margin: 1.66%;
-    padding-bottom: 30%;
-    float: left;
-    border-radius: 5%;
     transition: all 0.75s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 0;
 }
@@ -82,15 +87,6 @@ li {
     max-width: 600px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    -webkit-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.75);
-}
-
 .menuToggle {
     background-color: #232323;
     color: white;
@@ -113,8 +109,6 @@ button {
     text-shadow: -1px -1px grey;
     border-left: 1px solid;
     border-right: 1px solid;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
     border-color: rgb(27, 105, 161);
 }
 
@@ -123,18 +117,28 @@ button:focus {
 }
 
 #ulContainer {
-    border-bottom: 4px solid;
-    border-color: rgb(27, 105, 161);
+
 }
 
-#userStats {
-    text-align: center;
+.panels {
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
 }
 
-#userMessage {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    border-color: rgb(27, 105, 161);
+.panel {
+    height: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+#userStatsContainer {
+    float: left;
 }
